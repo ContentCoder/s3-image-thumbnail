@@ -11,7 +11,6 @@
 var util	= require('util'), 
 		path	= require('path'), 
 		aws		= require('aws-sdk'),
-		mime 	= require('mime'), 
 		tb		= require(path.join(__dirname, 'lib/image-thumbnail-buffer/thumbnail-buffer.js'));
 
 // aws init
