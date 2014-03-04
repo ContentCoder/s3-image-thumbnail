@@ -10,8 +10,9 @@
 
 var util	= require('util'), 
 		path	= require('path'), 
+		mime 	= require('mime'), 
 		aws		= require('aws-sdk'),
-		tb		= require(path.join(__dirname, 'lib/image-thumbnail-buffer/thumbnail-buffer.js'));
+		tb		= require(path.join(__dirname, '../image-thumbnail-buffer/thumbnail-buffer.js'));
 
 // aws init
 aws.config.loadFromPath(path.join(__dirname, 'awsconfig.json'));
