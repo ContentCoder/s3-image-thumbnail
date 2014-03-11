@@ -8,6 +8,8 @@
  * update date: 2014-2-13
  */
 
+exports.create = create;
+
 var util	= require('util'), 
 		path	= require('path'), 
 		mime 	= require('mime'), 
@@ -72,5 +74,4 @@ function create(image, thumb, options, callback) {
 	});		// s3.getObject
 }
 
-exports.create = create;
 
